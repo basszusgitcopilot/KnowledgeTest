@@ -12,7 +12,8 @@ class KnowledgeTestItem {
     };
 
     virtual ~KnowledgeTestItem() = default;
-    virtual auto getQuestion() -> std::string = 0;
+    virtual auto getQuestion() const -> std::string = 0;
+    virtual auto getRightAnswer() const -> std::string = 0;
     virtual auto checkAnswer(const std::string &answer) -> CheckAnswerResult = 0;
 };
 } // namespace com::prog::latin::tester
