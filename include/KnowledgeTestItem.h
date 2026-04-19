@@ -1,7 +1,6 @@
 #pragma once
 
 #include <string>
-#include <vector>
 
 namespace com::prog::knowledgetest {
 class KnowledgeTestItem {
